@@ -3,7 +3,7 @@
 
 <head>
   <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="static/main.css">
+  <link rel="stylesheet" type="text/css" href="static/index.css">
   <title>Yields the Story of Life</title>
 </head>
 
@@ -12,7 +12,7 @@
     <li v-for="img in images">
       <img :src="img.url">
     </li>
-    
+
   </div>
   <script>
     fetch('./static/image_data.json').then(function (response) {
@@ -20,7 +20,7 @@
     }).then(function (j) {
       new Vue({
       el: '#app',
-      data : 
+      data :
       {
         images:j.images
       }
