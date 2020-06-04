@@ -5,149 +5,237 @@
   <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
   <link rel="stylesheet" type="text/css" href="static/index.css">
   <title>Yields the Story of Life</title>
-<style>
-.thumbnailStyle{
-  height:50;
-  width:150;
+  <style>
+    .thumbnailStyle {
+      height: 50;
+      width: 150;
 
-}
-div.img {
-    border: 1px solid #ccc;
-}
+    }
 
-div.img:hover {
-    border: 1px solid #777;
-}
+    div.img {
+      border: 1px solid #ccc;
+    }
 
-div.img img {
-    width: 100%;
-    height: auto;
-}
+    div.img:hover 
+    {
+      border: 1px solid #777;
+    }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
+    div.img img {
+      width: 100%;
+      height: auto;
+    }
 
-*{
-    box-sizing: border-box;
-    background-color: black;
-}
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
 
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
+    * {
+      box-sizing: border-box;
+      background-color: black;
+    }
 
-@media only screen and (max-width: 700px){
     .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
         width: 49.99999%;
         margin: 6px 0;
+      }
     }
-}
 
-@media only screen and (max-width: 500px){
-    .responsive {
+    @media only screen and (max-width: 500px) {
+      .responsive {
         width: 100%;
+      }
     }
-}
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-header{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 250px;
-}
+    header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 250px;
+    }
 
-footer{
-  float: left;
-  background-color: black;
-}
+    footer {
+      font-family: "Roboto";
+      padding: 50px 25px;
+      font-size: .75rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: black;
+    }
 
-.banner{
-  color: white;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+    footer ul {
+      list-style: none;
+      margin-right: 25px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      opacity: 0.5;
+    }
 
-.title{
-    text-transform: uppercase;
-    font-size: .88rem;
-    letter-spacing: 8.6px;
-    opacity: 0.3;
-}
-.h{
-    text-transform: uppercase;
-    font-size: .88rem;
-    padding: 8.6px;
-    opacity: 1;
-}
+    .banner {
+      color: white;
+      cursor: default;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
-</style>
+    .title {
+      text-transform: uppercase;
+      font-size: .88rem;
+      letter-spacing: 8.6px;
+      opacity: 0.3;
+    }
+
+    .h {
+      text-transform: uppercase;
+      font-size: .88rem;
+      padding: 8.6px;
+      opacity: 1;
+    }
+
+    .content {
+      float: left;
+      align-items: center;
+    }
+
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
     <header>
-      <div class = "banner">
-          <span class = "h">Y</span>
-          <span class = "title">ields the</span> 
-          <span class = "h">S</span>
-          <span class="title">tory of</span> 
-          <span class = "h">L</span>
-          <span class = "title">ife</span>
+      <div class="banner">
+        <span class="h">Y</span>
+        <span class="title">ields the</span>
+        <span class="h">S</span>
+        <span class="title">tory of</span>
+        <span class="h">L</span>
+        <span class="title">ife</span>
       </div>
     </header>
+    <div class="content">
       <div v-for="img in images" v-bind:class="responsiveStyle">
         <div v-bind:class="imgStyle">
           <img :src="img.url">
           <div v-bind:class="descStyle"></div>
         </div>
       </div>
-      <footer>
-      </footer>
+    </div>
+
+    <footer>
+      <ul style="align-content: center;">
+        <li>
+          GitHub
+        </li>
+        <li>
+          visysl@outlook.com
+        </li>
+      </ul>
+    </footer>
   </div>
-
-
-
-
   <script>
+
+    var imageViewer = {
+      props: ["imgUrl"],
+      template: '<img src=imgUrl/>'
+    }
+
+
     fetch('./static/image_data.json').then(function (response) {
       return response.json();
     }).then(function (j) {
       new Vue({
-      el: '#app',
-      data :
-      {
-        images:j.images,
-        responsiveStyle:{
-          responsive:true
-        },
-        imgStyle:{
-          img:true
-        },
-        descStyle:
+        el: '#app',
+        data:
         {
-          desc:true
+          images: j.images,
+          responsiveStyle: {
+            responsive: true
+          },
+          imgStyle: {
+            img: true
+          },
+          descStyle:
+          {
+            desc: true
+          },
+          components: imageViewer
+        },
+        method:{
+          detail:function(event){
+
+          }
         }
-      }
-    });
+      });
     });
 
   </script>
