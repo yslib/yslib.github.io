@@ -6,7 +6,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"iPhone7"
     },
     {
       "url":"https://files.catbox.moe/w40bdd.jpg",
@@ -14,7 +14,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"iPhone7"
     },
     {
       "url":"https://files.catbox.moe/n76dxv.jpg",
@@ -22,7 +22,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"iPhone 7 Plus"
     },
     {
       "url":"https://files.catbox.moe/k2b5ne.jpg",
@@ -30,7 +30,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"Canon EOS 6D Mark II"
     }
     ,
     {
@@ -39,7 +39,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"Canon EOS 6D Mark II"
     }
     ,
     {
@@ -48,7 +48,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"Canon EOS 6D Mark II"
     }
     ,
     {
@@ -57,7 +57,8 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+
+      "device":"Canon EOS 6D Mark II"
     }
     ,
     {
@@ -66,7 +67,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"Canon EOS 6D Mark II"
     }
     ,
     {
@@ -75,7 +76,7 @@
       "date": "2020-06-01",
       "location":"HangZhou",
       "note":"This is a test pictures",
-      "device":"This picture is photoed by iPhone7 Plus"
+      "device":"Canon EOS 6D Mark II"
     }
   ]
 }
