@@ -5,12 +5,73 @@
   <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
   <link rel="stylesheet" type="text/css" href="static/index.css">
   <title>Yields the Story of Life</title>
+<style>
+.thumbnailStyle{
+  height:50;
+  width:150;
+
+}
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
 </head>
 
 <body>
   <div id="app">
+
+
     <li v-for="img in images">
-      <img :src="img.url">
+      <div v-bind:class="responsiveStyle">
+        <div v-bind:class="imgStyle">
+          <img :src="img.url">
+          <div v-bind:class="descStyle"></div>
+        </div>
+      </div>
     </li>
 
   </div>
@@ -22,10 +83,19 @@
       el: '#app',
       data :
       {
-        images:j.images
+        images:j.images,
+        responsiveStyle:{
+          responsive:true
+        },
+        imgStyle:{
+          img:true
+        },
+        descStyle:
+        {
+          desc:true
+        }
       }
     });
-    console.log(j.images);
     });
 
   </script>
