@@ -63,17 +63,12 @@ div.desc {
 
 <body>
   <div id="app">
-
-
-    <li v-for="img in images">
-      <div v-bind:class="responsiveStyle">
+      <div v-for="img in images" v-bind:class="responsiveStyle">
         <div v-bind:class="imgStyle">
           <img :src="img.url">
           <div v-bind:class="descStyle"></div>
         </div>
       </div>
-    </li>
-
   </div>
   <script>
     fetch('./static/image_data.json').then(function (response) {
