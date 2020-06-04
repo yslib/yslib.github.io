@@ -29,7 +29,7 @@ div.desc {
     text-align: center;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -58,18 +58,74 @@ div.desc {
     clear: both;
 }
 
+header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 250px;
+}
+
+footer{
+  float: left;
+  background-color: black;
+}
+
+.banner{
+  color: white;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: .88rem;
+    letter-spacing: 8.6px;
+    opacity: 0.3;
+}
+.h{
+    text-transform: uppercase;
+    font-size: .88rem;
+    padding: 8.6px;
+    opacity: 1;
+}
+
 </style>
 </head>
 
 <body>
   <div id="app">
+    <header>
+      <div class = "banner">
+          <span class = "h">Y</span>
+          <span class = "title">ields the</span> 
+          <span class = "h">S</span>
+          <span class="title">tory of</span> 
+          <span class = "h">L</span>
+          <span class = "title">ife</span>
+      </div>
+    </header>
       <div v-for="img in images" v-bind:class="responsiveStyle">
         <div v-bind:class="imgStyle">
           <img :src="img.url">
           <div v-bind:class="descStyle"></div>
         </div>
       </div>
+      <footer>
+      </footer>
   </div>
+
+
+
+
   <script>
     fetch('./static/image_data.json').then(function (response) {
       return response.json();
