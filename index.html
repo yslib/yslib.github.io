@@ -35,7 +35,8 @@
         <img class="modal-content" :src="originImage" />
         <div id="caption">
           <h1>{{name}}</h1>
-          <h2>{{location}} {{date}}</h2>
+          <hr/>
+          <h2>{{location}} | {{date}}</h2>
           <h4>{{device}}</h4>
           <h4>{{note}}</h4>
         </div>
@@ -69,7 +70,7 @@
         return response.json();
       }).then(function (j) {
         var imagesByColumes = [[], [], [], []];
-        for (var i = 0; i < j.images.length; i++) 
+        for (var i = 0; i < j.images.length; i++)
         {
           imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
         }
