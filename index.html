@@ -3,12 +3,12 @@
 
 <head>
   <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
-<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <link rel="stylesheet" type="text/css" href="static/index.css">
   <title>Yields the Story of Life</title>
   <style>
-  
-</style>
+
+  </style>
   </style>
 </head>
 
@@ -17,8 +17,7 @@
     <header>
       <div class="hero-image">
       </div>
-
-        <img src ="static/avatar.jpg" class = "avatar">
+      <img src="static/avatar.jpg" class="avatar">
       <div class="banner">
         <span class="h">Y</span>
         <span class="title">ields the</span>
@@ -30,9 +29,10 @@
     </header>
     <div class="content">
 
+      <!---->
       <div class="modal" v-show="isActive">
         <span class="close" v-on:click="isActive = false">&times;</span>
-        <img class="modal-content" :src= "originImage"/>
+        <img class="modal-content" :src="originImage" />
         <div id="caption">
           <h2>{{location}}</h2>
           <h3>{{date}}</h3>
@@ -40,65 +40,76 @@
         </div>
       </div>
 
-      <div v-for="img in images" v-bind:class="responsiveStyle">
-        <div v-bind:class="imgStyle">
-        <img :src="img.url" v-on:click="detail(img)" @click="isActive = true"/>
+      <div class="row">
+        <div v-for="c in imagesByColumes.length" class="column">
+          <div v-for="img in imagesByColumes[c]">
+            <div v-bind:class="responsiveStyle">
+              <img :src="img.url" v-on:click="detail(img)" @click="isActive = true" class="thumbnailStyle" />
+            </div>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <ul style="text-align:left;">
+          <li>
+            <a href="https://github.com/yslib">GitHub</a>
+          </li>
+          <li>
+            visysl@outlook.com
+          </li>
+        </ul>
+      </footer>
     </div>
-
-    <footer>
-      <ul style="align-content: center;">
-        <li>
-          GitHub
-        </li>
-        <li>
-          visysl@outlook.com
-        </li>
-      </ul>
-    </footer>
-  </div>
-  <script>
+    <script>
 
 
-    fetch('./static/image_data.json').then(function (response) {
-      return response.json();
-    }).then(function (j) {
-      new Vue({
-        el: '#app',
-        data:
+      fetch('./static/image_data.json').then(function (response) {
+        return response.json();
+      }).then(function (j) {
+        var imagesByColumes = [[], [], [], []];
+        for (var i = 0; i < j.images.length; i++) 
         {
-          images: j.images,
-          originImage:"",
-          location:"",
-          date:"",
-          device:"",
-          responsiveStyle: {
-            responsive: true
-          },
-          imgStyle: {
-            img: true
-          },
-          descStyle:
-          {
-            desc: true
-          },
-          isActive:false
-        },
-        methods:{
-          detail:function(img){
-            this.originImage=img.url;
-            this.location=img.location;
-            this.date=img.date;
-            this.device=img.device;
-          }
+          imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
         }
+
+        new Vue({
+          el: '#app',
+          data:
+          {
+            imagesByColumes: imagesByColumes,
+            originImage: "",
+            location: "",
+            date: "",
+            device: "",
+            columeCount: 4,
+            colIndex: 0,
+            responsiveStyle: {
+              responsive: true
+            },
+            imgStyle: {
+              img: true
+            },
+            descStyle:
+            {
+              desc: true
+            },
+            isActive: false
+          },
+          methods: {
+            detail: function (img) {
+              this.originImage = img.url;
+              this.location = img.location;
+              this.date = img.date;
+              this.device = img.device;
+            }
+          }
+        });
       });
-    });
 
 
 
-  </script>
+    </script>
 </body>
 
 </html>
