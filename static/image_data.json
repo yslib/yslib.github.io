@@ -2,81 +2,312 @@
   "images":[
     {
       "url":"https://files.catbox.moe/xrsfps.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"iPhone7"
+      "name": "翠光亭",
+      "date": "2020-6-01",
+      "location":"Cuiguangting, West Lake",
+      "note":"试了一下减光镜",
+      "device":"Canon EOS 6D Mark II + Sigma ART 14mm f/1.8"
     },
     {
-      "url":"https://files.catbox.moe/w40bdd.jpg",
-      "name": "test",
+      "url":"https://files.catbox.moe/r9aewv.jpg",
+      "name": "紫金港晚霞",
       "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"iPhone7"
+      "location":"Zijingang Campus, Zhejiang University",
+      "note":"和同学去食堂吃饭的路上",
+      "device":"iPhone7 Plus"
+    },
+
+    {
+      "url":"https://files.catbox.moe/zcuf3t.jpg",
+      "name": "集贤亭",
+      "date": "2020-05-16",
+      "location":"West Lake",
+      "note":"在滨江往西湖方向走的路上试了一下新买的超广角镜头。",
+      "device":"Canon EOS 6D Mark II + Sigma ART 14mm f/1.8"
+    },
+    {
+      "url":"https://files.catbox.moe/614s82.jpg",
+      "name": "西湖晚霞",
+      "date": "2017-10-16",
+      "location":"West Lake",
+      "note":"当时的空气质量非常好，现在遇到这种天气真的很难了。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/bkqtno.jpg",
+      "name": "西湖晚霞",
+      "date": "2017-10-16",
+      "location":"West Lake",
+      "note":"可惜是手机拍的，画质不够。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/3bsj99.jpg",
+      "name": "金阁寺一角",
+      "date": "2018-08-08",
+      "location":"Kinkakujicho, Kyoto",
+      "note":"京都金阁寺的某个地方，具体忘了是哪里了。几乎都是中国游客，不知道还以为是国内的某个景点。",
+      "device":"iPhone7 Plus"
     },
     {
       "url":"https://files.catbox.moe/n76dxv.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"iPhone 7 Plus"
+      "name": "开元寺须弥塔和钟楼",
+      "date": "2020-03-25",
+      "location":"Kaiyuan Temple, ZhengDing",
+      "note":"散步的路上拍的。雾霾太严重，去霾处理之后天都黑了。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
     },
+    
     {
-      "url":"https://files.catbox.moe/k2b5ne.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"Canon EOS 6D Mark II"
-    }
-    ,
+      "url":"https://files.catbox.moe/kdlitz.jpg",
+      "name": "不知道名字的鸟",
+      "date": "2020-04-5",
+      "location":"Xixi National Wetland Park, HangZhou",
+      "note":"西溪湿地观鸟亭的屋子里面拍的，里面有很多打鸟的老法师。拍了一张之后真的不知道有啥好拍的。",
+      "device":"Canon EOS 6D Mark II + Sigma ART 14mm f/1.8"
+    },
+
     {
       "url":"https://files.catbox.moe/4v1pyk.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
+      "name": "九溪烟树",
+      "date": "2020-05-23",
+      "location":"Nine creeks in misty forest",
+      "note":"随手拍的",
       "device":"Canon EOS 6D Mark II"
+    },
+    {
+      "url":"https://files.catbox.moe/d9mso7.jpg",
+      "name": "九溪烟树",
+      "date": "2018-05-6",
+      "location":"Nine creeks in misty forest",
+      "note":"当时是梅雨季，溪水水流很急。整个九溪雾气朦胧。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/aqi22d.jpg",
+      "name": "日落",
+      "date": "2018-05-16",
+      "location":"West Lake",
+      "note":"某个码头。直出的图就是像红色的鸡蛋黄一样，没有多少后期。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
+    },
+
+    {
+      "url":"https://files.catbox.moe/9bdyl5.jpg",
+      "name": "花船",
+      "date": "2020-04-05",
+      "location":"Xixi National Wetland Park, HangZhou",
+      "note":"忘了具体位置了。第一次看到感觉挺经验的，可惜拍不好。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
     }
     ,
     {
       "url":"https://files.catbox.moe/b3fvsb.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"Canon EOS 6D Mark II"
+      "name": "观鸟亭",
+      "date": "2020-04-05",
+      "location":"Xixi National Wetland Park, HangZhou",
+      "note":"在氦气球上拍的观鸟亭。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
     }
     ,
     {
-      "url":"https://files.catbox.moe/9bdyl5.jpg",
-      "name": "test",
+      "url":"https://files.catbox.moe/7n2hg7.jpg",
+      "name": "下午",
       "date": "2020-06-01",
-      "location":"HangZhou",
+      "location":"West Lake, HangZhou",
+      "note":"年代久远",
+      "device":"iPhone7 Plus"
+    }
+    ,
+    
+    {
+      "url":"https://files.catbox.moe/wvihaf.jpg",
+      "name": "竹林",
+      "date": "2020-05-31",
+      "location":"Xixi National Wetland Park, HangZhou",
+      "note":"西溪湿地的某个竹林",
+      "device":"Canon EOS 6D Mark II + + Sigma ART 14mm f/1.8"
+    },
+    {
+      "url":"https://files.catbox.moe/60vix8.jpg",
+      "name": "西溪湿地",
+      "date": "2020-05-31",
+      "location":"Xixi National Wetland Park, HangZhou",
+      "note":"在氦气球上拍的西溪湿地，因为氦气球上有缆绳，所以裁成了细长的图。",
+      "device":"Canon EOS 6D Mark II + Sigma ART 14mm f/1.8"
+    }
+    ,
+    {
+      "url":"https://files.catbox.moe/pedtlg.jpg",
+      "name": "吐舌头的猫",
+      "date": "2020-05-31",
+      "location":"West Lake, HangZhou",
+      "note":"在涌金门附近的一个草坪上。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
+    }
+    ,
+    {
+      "url":"https://files.catbox.moe/ntzw84.jpg",
+      "name": "大阪港大桥",
+      "date": "2018-08-10",
+      "location":"Minato Bridge, Osaka Port",
+      "note":"在大阪港的轮渡上拍的。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/0xo4y1.jpg",
+      "name": "天守阁",
+      "date": "2018-08-11",
+      "location":"Osaka Castle, Osaka",
+      "note":"大阪城的天守阁，里面和雷峰塔一样，很现代化。都是后来修复的。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/a0g183.jpg",
+      "name": "新宿御苑",
+      "date": "2018-08-14",
+      "location":"Shinjuku Gyoen, Tokyo",
+      "note":"据说这个亭子在言叶之庭里出现过",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/kxv7z8.jpg",
+      "name": "环球金融中心",
+      "date": "2017-10-01",
+      "location":"Shanghai Tower ,Shanghai",
+      "note":"在上海中心大厦拍的环球金融中心。玻璃幕墙的反光加上多云的下雨天，感觉很有意境。可惜有个反光的人影",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/kxv7z8.jpg",
+      "name": "陆家嘴三巨头",
+      "date": "2017-10-01",
+      "location":"Lujiazui ,Shanghai",
+      "note":"当时只有手机，只能拍成这样了。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/6uho5m.jpg",
+      "name": "蝴蝶",
+      "date": "2020-03-29",
+      "location":"Shijiazhuang ZOO",
+      "note":"第一次用长焦镜头，看见什么就像拍什么。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/1dw7z5.jpg",
+      "name": "丹顶鹤",
+      "date": "2020-03-29",
+      "location":"Shijiazhuang ZOO",
+      "note":"进动物园第一张动物照片，当时就是随便拍的。拍完之后感觉这张是最好的。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
+    },
+    {
+      "url":"https://files.catbox.moe/ochttn.jpg",
+      "name": "不知道叫啥",
+      "date": "2020-03-29",
+      "location":"Shijiazhuang ZOO",
+      "note":"非常警惕。记着它一直盯着我看，我走到哪里它就看到哪里。",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
+    },
+    {
+      "url":"https://files.catbox.moe/b2xuem.jpg",
+      "name": "猴子",
+      "date": "2020-03-29",
+      "location":"Shijiazhuang ZOO",
+      "note":"",
+      "device":"Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
+    },
+    {
+      "url":"https://files.catbox.moe/2bb72d.jpg",
+      "name": "某金刚鹦鹉",
+      "date": "2020-03-29",
+      "location":"The University of Tokyo",
       "note":"This is a test pictures",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/6c49py.jpg",
+      "name": "千本鸟居",
+      "date": "2018-08-09",
+      "location":"Fushimi Inari Shrine, Kyoto, Senbon Torii",
+      "note":"很有名的千本鸟居。京都伏见稻荷大社里面。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/hq35s7.jpg",
+      "name": "东京大学",
+      "date": "2018-08-12",
+      "location":"The University of Tokyo, Tokyo",
+      "note":"这应该是本部了？面积真的很小，当时可能是暑假，几乎没有人。东大还有一个景点就是那个比较有名的大红门，但是个人感觉一般。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/wco10a.jpg",
+      "name": "稻荷山顶",
+      "date": "2018-08-09",
+      "location":"Fushimi Inari Shrine, Kyoto, Senbon Torii",
+      "note":"京都远眺，感觉就是大县城。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/4qbimm.jpg",
+      "name": "新宿御苑",
+      "date": "2018-08-14",
+      "location":"Shinjuku Gyoen, Tokyo",
+      "note":"东京最繁华的新宿区的新宿御苑是一个非常好的景点。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/cllqoq.jpg",
+      "name": "枫叶",
+      "date": "2019-10-22",
+      "location":"Stanly Park, Vancouver",
+      "note":"史丹利公园的枫叶，雨过天晴。",
+      "device":"iPhone7 Plus"
+    },
+       {
+      "url":"https://files.catbox.moe/kab66q.jpg",
+      "name": "史丹利公园",
+      "date": "2019-10-22",
+      "location":"Vancouver Convention Centre",
+      "note":"从国际会议中心远望史丹利公园。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/k3yno9.jpg",
+      "name": "史丹利公园",
+      "date": "2019-10-22",
+      "location":"Vancouver Convention Centre",
+      "note":"从国际会议中心远望史丹利公园。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/obney7.jpg",
+      "name": "水坑",
+      "date": "2019-10-23",
+      "location":"Stanly Park, Vancouver",
+      "note":"某个湖。其实就是个小水坑，完全未开发。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/djkfig.jpg",
+      "name": "温哥华阳光海岸",
+      "date": "2019-10-23",
+      "location":"Sunset beach, Vancouver",
+      "note":"当时的风非常的大，浪也很凶。海水就像一块巨大的玉石，浪的波纹锯齿感很明显。给人的印象完全不像是名字描述的那样是一个明媚的午后阳光浴场。",
+      "device":"iPhone7 Plus"
+    },
+    {
+      "url":"https://files.catbox.moe/78we7b.jpg",
+      "name": "五岳寨",
+      "date": "2020-06-01",
+      "location":"Wuyuezhai Mountain, Shijiazhuang",
+      "note":"去往云顶草原的路上。走了一个多小时还没走到，周围一个人都没有，有点慌了，就回去了。",
+      "device":"iPhone7 Plus"
+    }
 
-      "device":"Canon EOS 6D Mark II"
-    }
-    ,
-    {
-      "url":"https://files.catbox.moe/kdlitz.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"Canon EOS 6D Mark II"
-    }
-    ,
-    {
-      "url":"https://files.catbox.moe/aqi22d.jpg",
-      "name": "test",
-      "date": "2020-06-01",
-      "location":"HangZhou",
-      "note":"This is a test pictures",
-      "device":"Canon EOS 6D Mark II"
-    }
+
+
   ]
 }

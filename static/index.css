@@ -176,6 +176,7 @@ margin: auto;
 display: block;
 width: 80%;
 max-width: 700px;
+border-radius: 1%;
 }
 .close {
 position: absolute;
@@ -202,18 +203,19 @@ cursor: pointer;
 -webkit-animation-duration: 0.6s;
 animation-name: zoom;
 animation-duration: 0.6s;
+border-radius: 1%;
 }
 #caption {
 z-index: 1; /* Sit on top */
 float:right;
 bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-background: rgb(0, 0, 0); /* Fallback color */
-background: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
-text-align:center;
+/* background: rgb(0, 0, 0); */
+/* background: rgba(0, 0, 0, 0.0);  */
+text-align:left;
 opacity:0.5;
 color: #f1f1f1; /* Grey text */
-width: 50%; /* Full width */
-padding: 20px; /* Some padding */
+width: 100%; /* Full width */
+padding: 10px; /* Some padding */
 }
 
 
