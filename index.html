@@ -42,7 +42,7 @@
 
       <div class="row">
         <div v-for="c in imagesByColumes.length" class="column">
-          <div v-for="img in imagesByColumes[c]">
+          <div v-for="img in imagesByColumes[c-1]">
             <div v-bind:class="responsiveStyle">
               <img :src="img.url" v-on:click="detail(img)" @click="isActive = true" class="thumbnailStyle" />
             </div>
@@ -71,6 +71,7 @@
         for (var i = 0; i < j.images.length; i++) 
         {
           imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
+          console.log(i%imagesByColumes.length);
         }
 
         new Vue({
