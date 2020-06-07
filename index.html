@@ -49,7 +49,7 @@
           <!-- Full-width images with number and caption text -->
 
           <div class="fade">
-            <div class="numbertext">{{currentSlideIndex + 1}} / {{slides.length}}</div>
+            <!-- <div class="numbertext">{{currentSlideIndex + 1}} / {{slides.length}}</div> -->
             <img v-on:click="detail(slides[currentSlideIndex])" @click="isActive = true" :src="slides[currentSlideIndex].url" style="width:100%;max-height:400px;border-radius: 2%;object-fit: contain;">
           </div>
           <div class="text">{{slides[currentSlideIndex].name}}</div>
@@ -99,6 +99,9 @@
 
 
         var imagesByColumes = [[], [], [], []];
+
+        j.images = j.images.sort(function(x,y){return x.date < y.date ? 1 : x.date > y.date ? -1 : 0;})
+        console.log("sorted");
         for (var i = 0; i < j.images.length; i++) {
           imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
         }
