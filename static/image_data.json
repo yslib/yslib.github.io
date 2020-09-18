@@ -532,6 +532,51 @@
       "location": "Wuhan University",
       "note": "老斋舍的房顶，上面有个图书馆。",
       "device": "iPhone7 Plus"
+    },
+    {
+      "url": "https://files.catbox.moe/agmivv.jpg",
+      "thumbnailUrl": "78_thum.jpg",
+      "name": "不知道这花叫啥",
+      "date": "2020-5-23",
+      "location": "Wu Zhen",
+      "note": "乌镇一角",
+      "device": "6D2 24-70mm"
+    },
+    {
+      "url": "https://files.catbox.moe/acyau5.jpg",
+      "thumbnailUrl": "77_thum.jpg",
+      "name": "清晨",
+      "date": "2020-8-1",
+      "location": "钱塘江樱花步道",
+      "note": "7月份一个月跑了270公里，8月1号出来排张照纪念一下",
+      "device": "Conon 6D2, Sigma 14mm f/1.8"
+    },
+    {
+      "url": "https://files.catbox.moe/6bl5tj.jpeg",
+      "thumbnailUrl": "81_thum.jpg",
+      "name": "夜鹭",
+      "date": "2020-8-1",
+      "location": "钱塘江樱花步道",
+      "note": "蹲了好长时间拍到的",
+      "device": "Conon 6D2, 100-400mm"
+    },
+    {
+      "url": "https://files.catbox.moe/8780rz.jpg",
+      "thumbnailUrl": "79_thum.jpg",
+      "name": "白鹭",
+      "date": "2020-8-1",
+      "location": "钱塘江樱花步道",
+      "note": "蹲了好长时间拍到的",
+      "device": "Conon 6D2, 100-400mm"
+    },
+    {
+      "url":"https://files.catbox.moe/xixlmx.jpg",
+      "thumbnailUrl": "80_thum.jpg",
+      "name": "张小泉",
+      "date": "2020-5-23",
+      "location": "乌镇",
+      "note": "空无一人的清晨",
+      "device": "Conon 6D2, 24-70mm"
     }
   ]
 }
