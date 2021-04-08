@@ -2,9 +2,10 @@
 <html>
 
 <head>
-  <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+  <script src="https://unpkg.com/vue@next"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <link rel="stylesheet" type="text/css" href="static/index.css">
+
   <title>Yields the Story of Life</title>
   <style>
 
@@ -67,7 +68,6 @@
 
       </div>
 
-
       <div class="row">
         <div v-for="c in imagesByColumes.length" class="column">
           <div v-for="img in imagesByColumes[c-1]">
@@ -95,31 +95,21 @@
       </footer>
     </div>
     <script>
-
-
       fetch('./static/image_data.json').then(function (response) {
         return response.json();
       }).then(function (j) {
-
-
         var imagesByColumes = [[], [], [], []];
-
         j.images = j.images.sort(function(x,y){return x.date < y.date ? 1 : x.date > y.date ? -1 : 0;})
-        console.log("sorted");
         for (var i = 0; i < j.images.length; i++) {
           imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
         }
-
         var slideImages = j.slides;
-
-        console.log("asdfasdf"+slideImages.count)
-
-        new Vue({
+        Vue.createApp({
           el: '#app',
-          data:
-          {
+          data(){
+            return {
             imagesByColumes: imagesByColumes,
-            slides:slideImages,
+            slides: slideImages,
             currentSlideIndex:0,
             thumbnailUrl: "",
             originImage: "",
@@ -141,6 +131,7 @@
               desc: true
             },
             isActive: false
+          }
           },
           methods: {
             detail: function (img) {
@@ -166,14 +157,10 @@
             }else if(this.currentSlideIndex < 0){
               this.currentSlideIndex = 0
             }
-
           }
-          },
-
-        });
+          }
+        }).mount('#app');
       });
-
-
 
     </script>
 </body>
