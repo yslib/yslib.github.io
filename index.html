@@ -7,10 +7,21 @@
   <link rel="stylesheet" type="text/css" href="static/index.css">
 
   <title>Yields the Story of Life</title>
-  <style>
 
-  </style>
-  </style>
+    <template id="myfooter">
+      <div>
+        <ul style="text-align:center; padding-top:10px;list-style: none;">
+          <li style ="text-decoration:none;color:white;">
+            <a href="https://github.com/yslib" style ="text-decoration:none;color:white;">GitHub</a>
+          </li>
+          <li style ="text-decoration:none;color:white;">
+            <a href="https://visysl.com" style ="text-decoration:none;color:white;">My Blog</a>
+          </li>
+        </ul>
+      </div>
+    </template>
+
+
 </head>
 
 <body>
@@ -43,7 +54,7 @@
         </div>
       </div>
 
-      <div class ="slideContainer">
+      <div class="slideContainer">
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
@@ -51,7 +62,9 @@
 
           <div class="fade">
             <!-- <div class="numbertext">{{currentSlideIndex + 1}} / {{slides.length}}</div> -->
-            <img v-on:click="detail(slides[currentSlideIndex])" @click="isActive = true" :src="slides[currentSlideIndex].url" style="width:100%;max-height:400px;border-radius:2%; object-fit:contain;">
+            <img v-on:click="detail(slides[currentSlideIndex])" @click="isActive = true"
+              :src="slides[currentSlideIndex].url"
+              style="width:100%;max-height:400px;border-radius:2%; object-fit:contain;">
           </div>
           <div class="text">{{slides[currentSlideIndex].name}}</div>
 
@@ -63,7 +76,7 @@
 
         <!-- The dots/circles -->
         <div style="text-align:center">
-          <span v-for = "i in slides.length" class ="dot" @click="currentSlide(i-1)"></span>
+          <span v-for="i in slides.length" class="dot" @click="currentSlide(i-1)"></span>
         </div>
 
       </div>
@@ -79,59 +92,53 @@
         </div>
       </div>
 
-      <footer>
-        <ul style="text-align:left; padding-top:10px;">
-          <li>
-            <a href="https://github.com/yslib" style="text-decoration:none;color:white;">GitHub</a>
-          </li>
+      <myfooter></myfooter>
 
-          <li>
-            <a href="https://visysl.com" style="text-decoration:none;color:white;">My Blog</a>
-          </li>
-          <li>
-            visysl@outlook.com
-          </li>
-        </ul>
-      </footer>
+
     </div>
+
+
     <script>
+
       fetch('./static/image_data.json').then(function (response) {
         return response.json();
       }).then(function (j) {
+
         var imagesByColumes = [[], [], [], []];
-        j.images = j.images.sort(function(x,y){return x.date < y.date ? 1 : x.date > y.date ? -1 : 0;})
+        j.images = j.images.sort(function (x, y) { return x.date < y.date ? 1 : x.date > y.date ? -1 : 0; })
         for (var i = 0; i < j.images.length; i++) {
           imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
         }
         var slideImages = j.slides;
-        Vue.createApp({
+
+        const app = Vue.createApp({
           el: '#app',
-          data(){
+          data() {
             return {
-            imagesByColumes: imagesByColumes,
-            slides: slideImages,
-            currentSlideIndex:0,
-            thumbnailUrl: "",
-            originImage: "",
-            location: "",
-            date: "",
-            device: "",
-            note: "",
-            name: "",
-            columeCount: 4,
-            colIndex: 0,
-            responsiveStyle: {
-              responsive: true
-            },
-            imgStyle: {
-              img: true
-            },
-            descStyle:
-            {
-              desc: true
-            },
-            isActive: false
-          }
+              imagesByColumes: imagesByColumes,
+              slides: slideImages,
+              currentSlideIndex: 0,
+              thumbnailUrl: "",
+              originImage: "",
+              location: "",
+              date: "",
+              device: "",
+              note: "",
+              name: "",
+              columeCount: 4,
+              colIndex: 0,
+              responsiveStyle: {
+                responsive: true
+              },
+              imgStyle: {
+                img: true
+              },
+              descStyle:
+              {
+                desc: true
+              },
+              isActive: false
+            }
           },
           methods: {
             detail: function (img) {
@@ -142,24 +149,28 @@
               this.note = img.note;
               this.name = img.name;
             },
-            currentSlide:function(n){
-            this.currentSlideIndex = n;
-            if(this.currentSlideIndex >= this.slides.length){
-              this.currentSlideIndex = this.slides.length - 1;
-            }else if(this.currentSlideIndex < 0){
-              this.currentSlideIndex = 0
-            }
-          },
-          plusSlides:function(v){
-            this.currentSlideIndex += v
-            if(this.currentSlideIndex >= this.slides.length){
-              this.currentSlideIndex = this.slides.length - 1;
-            }else if(this.currentSlideIndex < 0){
-              this.currentSlideIndex = 0
+            currentSlide: function (n) {
+              this.currentSlideIndex = n;
+              if (this.currentSlideIndex >= this.slides.length) {
+                this.currentSlideIndex = this.slides.length - 1;
+              } else if (this.currentSlideIndex < 0) {
+                this.currentSlideIndex = 0
+              }
+            },
+            plusSlides: function (v) {
+              this.currentSlideIndex += v
+              if (this.currentSlideIndex >= this.slides.length) {
+                this.currentSlideIndex = this.slides.length - 1;
+              } else if (this.currentSlideIndex < 0) {
+                this.currentSlideIndex = 0
+              }
             }
           }
-          }
-        }).mount('#app');
+        });
+        app.component('myfooter', {
+          template: '#myfooter'
+        });
+        app.mount('#app');
       });
 
     </script>
