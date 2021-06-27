@@ -28,7 +28,7 @@
     <header>
       <div class="hero-image">
       </div>
-      <img src="static/avatar.jpg" class="avatar">
+      <img src="https://avatars.githubusercontent.com/u/9605622?s=400&u=446e3dddcd783f7a04df1babcc772f700e5a638c&v=4" class="avatar">
       <div class="banner">
         <span class="h">Y</span>
         <span class="title">ields the</span>
@@ -53,6 +53,14 @@
         </div>
       </div>
 
+<div class="dropdown">
+  <button class="dropbtn">Filter</button>
+  <div class="dropdown-content">
+    <a v-on:click="filter(0)">All</a>
+    <a v-on:click="filter(1)">Category</a>
+  </div>
+</div>
+
     <!--
       <div class="slideContainer">
         <div class="slideshow-container">
@@ -72,12 +80,23 @@
       </div>
     -->
 
-      <div class="row">
+      <div class="row" v-show="filterIndex == 0">
         <div v-for="c in imagesByColumes.length" class="column">
           <div v-for="img in imagesByColumes[c-1]">
             <div v-bind:class="responsiveStyle">
               <img :src="'./static/thumbnails/' + img.thumbnailUrl" v-on:click="detail(img)" @click="isActive = true"
                 class="thumbnailStyle" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-row" v-show="filterIndex != 0">
+        <div v-for="c in categories.length" class="filter_column">
+          <div v-for="cat in categories[c-1]">
+            <div v-bind:class="responsiveStyle">
+              <img :src="'./static/thumbnails/' + cat.img" v-on:click="category(cat.category)" @click="filterIndex = 0"
+                class="filter-thumbnailStyle" />
             </div>
           </div>
         </div>
@@ -91,23 +110,77 @@
 
     <script>
 
+      function sorter_by_date(x,y)
+      {
+          return x.date < y.date ? 1 : x.date > y.date ? -1 : 0;
+      }
+
+      function get_images(j,col, sorter){
+        var imagesByColumes = [];
+        for(var i =0;i<col;i++){
+          imagesByColumes.push([])
+        }
+        j.images = j.images.sort(sorter)
+        for (var i = 0; i < j.images.length; i++) {
+          imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
+        }
+        return imagesByColumes;
+      }
+
+      function get_category(image_db){
+        const m = new Map();
+        image_db.images.forEach(e => {
+          (e['category'] || []).forEach(e2 => {
+            if(m.has(e2)){
+              console.log(m, e2);
+              m.get(e2).images.push(e);
+            }else{
+              obj = {"cover":e['thumbnailUrl'] || "","images":[e]};
+              m.set(e2, obj);
+              console.log(m);
+            }
+          });
+        });
+
+        res = [[],[],[],[]];
+        arr = Array.from(m.keys());
+        for(var i =0;i<arr.length;i++){
+          res[i%res.length].push({"img":m.get(arr[i]).cover,"category":arr[i]});
+        }
+
+        ret = [res, m]
+        return ret;
+      }
+
+      function make_images(images,col,sorter){
+        var imagesByColumes = [];
+        for(var i =0;i<col;i++){
+          imagesByColumes.push([])
+        }
+        images = images.sort(sorter)
+        for (var i = 0; i < images.length; i++) {
+          imagesByColumes[i % imagesByColumes.length].push(images[i]);
+        }
+        return imagesByColumes;
+      }
+
+
       fetch('./static/image_data.json').then(function (response) {
         return response.json();
       }).then(function (j) {
 
-        var imagesByColumes = [[], [], [], []];
-        j.images = j.images.sort(function (x, y) { return x.date < y.date ? 1 : x.date > y.date ? -1 : 0; })
-        for (var i = 0; i < j.images.length; i++) {
-          imagesByColumes[i % imagesByColumes.length].push(j.images[i]);
-        }
-        var slideImages = j.slides;
+        imagesByColumes = get_images(j,4,sorter_by_date)
+
+        cat = get_category(j);
 
         const app = Vue.createApp({
           el: '#app',
           data() {
             return {
               imagesByColumes: imagesByColumes,
-              slides: slideImages,
+              categories:cat[0],
+              categoryData:cat[1],
+              slides: [],
               currentSlideIndex: 0,
               thumbnailUrl: "",
               originImage: "",
@@ -128,10 +201,18 @@
               {
                 desc: true
               },
-              isActive: false
+              isActive: false,
+              filterIndex:0,
             }
           },
           methods: {
+            filter: function(index){
+              this.filterIndex = index;
+              this.imagesByColumes = get_images(j,4,sorter_by_date);
+            },
+            category: function(category_name){
+              this.imagesByColumes = make_images(this.categoryData.get(category_name)['images'], 4, sorter_by_date);
+            },
             detail: function (img) {
               this.originImage = img.url;
               this.location = img.location;

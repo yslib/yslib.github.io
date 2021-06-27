@@ -8,6 +8,7 @@
 			"filename": "D:\\photo\\release\\beach.jpg",
 			"name": "",
 			"date": "2021-6-20",
+			"category":["landscape"],
 			"location": "",
 			"note": "",
 			"device": ""
@@ -16,6 +17,7 @@
 			"url": "https://files.catbox.moe/nmwgto.jpg",
 			"thumbnailUrl": "boat_thum.jpg",
 			"filename": "D:\\photo\\release\\boat.jpg",
+			"category":["landscape"],
 			"name": "",
 			"date": "2021-6-20",
 			"location": "",
@@ -26,6 +28,7 @@
 			"url": "https://files.catbox.moe/j63fpy.jpg",
 			"thumbnailUrl": "firework_thum.jpg",
 			"filename": "D:\\photo\\release\\firework.jpg",
+			"category":["landscape"],
 			"name": "",
 			"date": "",
 			"location": "",
@@ -35,6 +38,7 @@
 		{
 			"url": "https://files.catbox.moe/c7mr27.png",
 			"thumbnailUrl": "sunrise_thum.jpg",
+			"category":["landscape"],
 			"filename": "D:\\photo\\release\\sunrise.png",
 			"name": "",
 			"date": "2021-6-20",
@@ -47,6 +51,7 @@
 			"thumbnailUrl": "waterfall_thum.jpg",
 			"filename": "D:\\photo\\release\\waterfall.jpg",
 			"name": "",
+			"category":["landscape","water"],
 			"date": "2021-6-20",
 			"location": "",
 			"note": "",
@@ -57,6 +62,7 @@
 			"thumbnailUrl": "westlake_thum.jpg",
 			"filename": "D:\\photo\\release\\westlake.png",
 			"name": "",
+			"category":["landscape","water"],
 			"date": "2021-6-20",
 			"location": "",
 			"note": "",
@@ -66,6 +72,7 @@
 			"url": "https://files.catbox.moe/9bdyl5.jpg",
 			"thumbnailUrl": "18_thum.jpg",
 			"name": "\u82b1\u8239",
+			"category":["landscape"],
 			"date": "2020-04-05",
 			"location": "Xixi National Wetland Park, HangZhou",
 			"note": "\u5fd8\u4e86\u5177\u4f53\u4f4d\u7f6e\u4e86\u3002\u7b2c\u4e00\u6b21\u770b\u5230\u611f\u89c9\u633a\u60ca\u8273\u7684\uff0c\u53ef\u60dc\u62cd\u4e0d\u597d\u3002",
@@ -77,6 +84,7 @@
 			"thumbnailUrl": "disney_thum.jpg",
 			"filename": "D:\\photo\\release\\disney.jpg",
 			"name": "",
+			"category":["arch"],
 			"date": "2021-6-20",
 			"location": "",
 			"note": "",
@@ -87,6 +95,7 @@
 			"thumbnailUrl": "17_thum.jpg",
 			"name": "\u89c2\u9e1f\u4ead",
 			"date": "2020-04-05",
+			"category":["landscape"],
 			"location": "Xixi National Wetland Park, HangZhou",
 			"note": "\u5728\u6c26\u6c14\u7403\u4e0a\u62cd\u7684\u89c2\u9e1f\u4ead\u3002",
 			"device": "Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
@@ -96,6 +105,7 @@
 			"thumbnailUrl": "26_thum.jpg",
 			"name": "\u5927\u962a\u6e2f\u5927\u6865",
 			"date": "2018-08-10",
+			"category":["landscape","arch"],
 			"location": "Minato Bridge, Osaka Port",
 			"note": "\u5728\u5927\u962a\u6e2f\u7684\u8f6e\u6e21\u4e0a\u62cd\u7684\u3002",
 			"device": "iPhone7 Plus"
@@ -105,6 +115,7 @@
 			"thumbnailUrl": "28_thum.jpg",
 			"name": "\u65b0\u5bbf\u5fa1\u82d1",
 			"date": "2018-08-14",
+			"category":["landscape"],
 			"location": "Shinjuku Gyoen, Tokyo",
 			"note": "\u636e\u8bf4\u8fd9\u4e2a\u4ead\u5b50\u5728\u8a00\u53f6\u4e4b\u5ead\u91cc\u51fa\u73b0\u8fc7",
 			"device": "iPhone7 Plus"
@@ -115,6 +126,7 @@
 			"name": "\u8774\u8776",
 			"date": "2020-03-29",
 			"location": "Shijiazhuang ZOO",
+			"category":["animal"],
 			"note": "",
 			"device": "Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
 		},
@@ -124,6 +136,7 @@
 			"name": "\u4e39\u9876\u9e64",
 			"date": "2020-03-29",
 			"location": "Shijiazhuang ZOO",
+			"category":["animal"],
 			"note": "\u8fdb\u52a8\u7269\u56ed\u7b2c\u4e00\u5f20\u52a8\u7269\u7167\u7247\uff0c\u5f53\u65f6\u5c31\u662f\u968f\u4fbf\u62cd\u7684\u3002\u62cd\u5b8c\u4e4b\u540e\u611f\u89c9\u8fd9\u5f20\u662f\u6700\u597d\u7684\u3002",
 			"device": "Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
 		},
@@ -133,6 +146,7 @@
 			"name": "\u65b0\u5bbf\u5fa1\u82d1",
 			"date": "2018-08-14",
 			"location": "Shinjuku Gyoen, Tokyo",
+			"category":["landscape"],
 			"note": "\u4e1c\u4eac\u6700\u7e41\u534e\u7684\u65b0\u5bbf\u533a\u7684\u65b0\u5bbf\u5fa1\u82d1\u662f\u4e00\u4e2a\u975e\u5e38\u597d\u7684\u666f\u70b9\u3002",
 			"device": "iPhone7 Plus"
 		},
@@ -141,6 +155,7 @@
 			"thumbnailUrl": "41_thum.jpg",
 			"name": "\u67ab\u53f6",
 			"date": "2019-10-22",
+			"category":["landscape"],
 			"location": "Stanly Park, Vancouver",
 			"note": "\u53f2\u4e39\u5229\u516c\u56ed\u7684\u67ab\u53f6\uff0c\u96e8\u8fc7\u5929\u6674\u3002",
 			"device": "iPhone7 Plus"
@@ -150,6 +165,7 @@
 			"thumbnailUrl": "40_thum.jpg",
 			"name": "\u53f2\u4e39\u5229\u516c\u56ed",
 			"date": "2019-10-22",
+			"category":["landscape"],
 			"location": "Vancouver Convention Centre",
 			"note": "\u4ece\u56fd\u9645\u4f1a\u8bae\u4e2d\u5fc3\u8fdc\u671b\u53f2\u4e39\u5229\u516c\u56ed\u3002",
 			"device": "iPhone7 Plus"
@@ -159,6 +175,8 @@
 			"thumbnailUrl": "43_thum.jpg",
 			"name": "\u53f2\u4e39\u5229\u516c\u56ed",
 			"date": "2019-10-22",
+
+			"category":["landscape"],
 			"location": "Vancouver Convention Centre",
 			"note": "\u4ece\u56fd\u9645\u4f1a\u8bae\u4e2d\u5fc3\u8fdc\u671b\u53f2\u4e39\u5229\u516c\u56ed\u3002",
 			"device": "iPhone7 Plus"
@@ -168,6 +186,8 @@
 			"thumbnailUrl": "57_thum.jpg",
 			"name": "\u6c34\u5751",
 			"date": "2019-10-23",
+
+			"category":["landscape"],
 			"location": "Stanly Park, Vancouver",
 			"note": "\u67d0\u4e2a\u6e56\u3002\u5176\u5b9e\u5c31\u662f\u4e2a\u5c0f\u6c34\u5751\uff0c\u5b8c\u5168\u672a\u5f00\u53d1\u3002",
 			"device": "iPhone7 Plus"
@@ -177,6 +197,7 @@
 			"thumbnailUrl": "9_thum.jpg",
 			"name": "\u592a\u5b50\u6e7e\u516c\u56ed\u98ce\u8f66",
 			"date": "2020-06-06",
+			"category":["landscape"],
 			"location": "Taiziwan Park, HangZhou",
 			"note": "\u8fd9\u5f20\u662f\u7528\u957f\u7126\u955c\u5934\u62cd\u7684\uff0c\u6709\u70b9\u7a7a\u95f4\u538b\u7f29\u611f\u4e86\u3002",
 			"device": "Canon EOS 6D Mark II | EF 100-400mm F/4.5-5.6L"
@@ -185,6 +206,7 @@
 			"url": "https://files.catbox.moe/6bl5tj.jpeg",
 			"thumbnailUrl": "81_thum.jpg",
 			"name": "\u591c\u9e6d",
+			"category":["landscape"],
 			"date": "2020-8-1",
 			"location": "\u94b1\u5858\u6c5f\u6a31\u82b1\u6b65\u9053",
 			"note": "\u8e72\u4e86\u597d\u957f\u65f6\u95f4\u62cd\u5230\u7684",
