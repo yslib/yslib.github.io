@@ -174,7 +174,7 @@ background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 margin: auto;
 display: block;
 width: 80%;
-border-radius: 2%;
+border-radius: 0%;
 }
 .close {
 position: absolute;
