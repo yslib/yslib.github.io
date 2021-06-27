@@ -16,9 +16,9 @@ body,html{
     position: relative;
     top: -25px;
     left: 50%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 4%;
 }
 
 .row {
@@ -60,9 +60,11 @@ body,html{
     height: 250px;
     filter: brightness(0.7);
     object-fit: cover;
+    z-index: 0;
  }
 
  .thumbnailStyle:hover{
+   position: relative;
     vertical-align: middle;
     width: 100%;
     height: 250px;
@@ -70,6 +72,7 @@ body,html{
     object-fit: cover;
     cursor: pointer;
     transform: scale(1.05);
+    z-index:10;
  }
 
   * {
