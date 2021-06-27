@@ -60,7 +60,7 @@ body,html{
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    height: auto;
+    height: 400px;
  }
 
  .thumbnailStyle:hover{
@@ -70,7 +70,7 @@ body,html{
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    height: auto;
+    height: 400px;
     opacity: 0.5;
     cursor: pointer;
  }
@@ -265,7 +265,7 @@ to {transform:scale(1)}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-  
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
