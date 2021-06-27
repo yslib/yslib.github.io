@@ -30,15 +30,6 @@
 	],
 	"images": [
 		{
-			"url": "https://files.catbox.moe/zcuf3t.jpg",
-			"thumbnailUrl": "21_thum.jpg",
-			"name": "\u96c6\u8d24\u4ead",
-			"date": "2020-05-16",
-			"location": "West Lake",
-			"note": "\u5728\u6ee8\u6c5f\u5f80\u897f\u6e56\u65b9\u5411\u8d70\u7684\u8def\u4e0a\u8bd5\u4e86\u4e00\u4e0b\u65b0\u4e70\u7684\u8d85\u5e7f\u89d2\u955c\u5934\u3002",
-			"device": "Canon EOS 6D Mark II + Sigma ART 14mm f/1.8"
-		},
-		{
 			"url": "https://files.catbox.moe/9bdyl5.jpg",
 			"thumbnailUrl": "18_thum.jpg",
 			"name": "\u82b1\u8239",
@@ -108,24 +99,6 @@
 			"date": "2019-10-22",
 			"location": "Stanly Park, Vancouver",
 			"note": "\u53f2\u4e39\u5229\u516c\u56ed\u7684\u67ab\u53f6\uff0c\u96e8\u8fc7\u5929\u6674\u3002",
-			"device": "iPhone7 Plus"
-		},
-		{
-			"url": "https://i.loli.net/2020/06/07/sbGIZoRc94zypYN.jpg",
-			"thumbnailUrl": "71_thum.jpg",
-			"name": "\u67ab\u53f6",
-			"date": "2019-10-22",
-			"location": "Stanly Park, Vancouver",
-			"note": "\u53f2\u4e39\u5229\u516c\u56ed\u7684\u67ab\u53f6\uff0c\u96e8\u8fc7\u5929\u6674\u3002",
-			"device": "iPhone7 Plus"
-		},
-		{
-			"url": "https://i.loli.net/2020/06/07/pR5QnlagIOFV4fL.jpg",
-			"thumbnailUrl": "72_thum.jpg",
-			"name": "\u843d\u53f6",
-			"date": "2019-10-22",
-			"location": "Stanly Park, Vancouver",
-			"note": "\u843d\u53f6",
 			"device": "iPhone7 Plus"
 		},
 		{
