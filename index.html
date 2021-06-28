@@ -54,11 +54,9 @@
         </div>
       </div>
 
-      <div class="dropdown">
-        <button class="dropbtn">Filter</button>
-        <div class="dropdown-content">
-          <a v-on:click="filter(0)">All</a>
-          <a v-on:click="filter(1)">Category</a>
+      <div class="filterContainer">
+        <div id="btnContainer">
+            <button v-for="f in filters" v-bind:class="f.style" v-on:click="filter(f.index)">{{f.name}}</button>
         </div>
       </div>
 
@@ -182,6 +180,21 @@
               categoryData: cat[1],
               slides: [],
               currentSlideIndex: 0,
+              filters:[{
+                name:'All',
+                index:0,
+                style:{
+                  btn:true,
+                  btnActive:true
+                }
+              },{
+                name:'Category',
+                index:1,
+                style:{
+                  btn:true,
+                  btnActive:false
+                }
+              }],
               thumbnailUrl: "",
               originImage: "",
               location: "",
@@ -193,6 +206,10 @@
               colIndex: 0,
               responsiveStyle: {
                 responsive: true
+              },
+              btnStyle:{
+                btn:true,
+                btnActive:true
               },
               imgStyle: {
                 img: true
@@ -209,6 +226,10 @@
             filter: function (index) {
               this.filterIndex = index;
               this.imagesByColumes = get_images(j, 4, sorter_by_date);
+              this.filters.forEach(e => {
+                e.style.btnActive=false;
+              });
+              this.filters[index].style.btnActive=true;
             },
             category: function (category_name) {
               this.imagesByColumes = make_images(this.categoryData.get(category_name)['images'], 4, sorter_by_date);
