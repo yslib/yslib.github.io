@@ -8,18 +8,18 @@
 
   <title>Yields the Story of Life</title>
 
-    <template id="myfooter">
-      <div>
-        <ul style="text-align:center; padding-top:10px;list-style: none;">
-          <li style ="text-decoration:none;color:white;">
-            <a href="https://github.com/yslib" style ="text-decoration:none;color:white;">GitHub</a>
-          </li>
-          <li style ="text-decoration:none;color:white;">
-            <a href="https://visysl.com" style ="text-decoration:none;color:white;">My Blog</a>
-          </li>
-        </ul>
-      </div>
-    </template>
+  <template id="myfooter">
+    <div>
+      <ul style="text-align:center; padding-top:10px;list-style: none;">
+        <li style="text-decoration:none;color:white;">
+          <a href="https://github.com/yslib" style="text-decoration:none;color:white;">GitHub</a>
+        </li>
+        <li style="text-decoration:none;color:white;">
+          <a href="https://visysl.com" style="text-decoration:none;color:white;">My Blog</a>
+        </li>
+      </ul>
+    </div>
+  </template>
 
 </head>
 
@@ -28,7 +28,8 @@
     <header>
       <div class="hero-image">
       </div>
-      <img src="https://avatars.githubusercontent.com/u/9605622?s=400&u=446e3dddcd783f7a04df1babcc772f700e5a638c&v=4" class="avatar">
+      <img src="https://avatars.githubusercontent.com/u/9605622?s=400&u=446e3dddcd783f7a04df1babcc772f700e5a638c&v=4"
+        class="avatar">
       <div class="banner">
         <span class="h">Y</span>
         <span class="title">ields the</span>
@@ -53,15 +54,15 @@
         </div>
       </div>
 
-<div class="dropdown">
-  <button class="dropbtn">Filter</button>
-  <div class="dropdown-content">
-    <a v-on:click="filter(0)">All</a>
-    <a v-on:click="filter(1)">Category</a>
-  </div>
-</div>
+      <div class="dropdown">
+        <button class="dropbtn">Filter</button>
+        <div class="dropdown-content">
+          <a v-on:click="filter(0)">All</a>
+          <a v-on:click="filter(1)">Category</a>
+        </div>
+      </div>
 
-    <!--
+      <!--
       <div class="slideContainer">
         <div class="slideshow-container">
           <div class="fade">
@@ -92,7 +93,7 @@
       </div>
 
       <div class="filter-row" v-show="filterIndex != 0">
-        <div v-for="c in categories.length" class="filter_column">
+        <div v-for="c in categories.length" class="filter-column">
           <div v-for="cat in categories[c-1]">
             <div v-bind:class="responsiveStyle">
               <img :src="'./static/thumbnails/' + cat.img" v-on:click="category(cat.category)" @click="filterIndex = 0"
@@ -110,14 +111,13 @@
 
     <script>
 
-      function sorter_by_date(x,y)
-      {
-          return x.date < y.date ? 1 : x.date > y.date ? -1 : 0;
+      function sorter_by_date(x, y) {
+        return x.date < y.date ? 1 : x.date > y.date ? -1 : 0;
       }
 
-      function get_images(j,col, sorter){
+      function get_images(j, col, sorter) {
         var imagesByColumes = [];
-        for(var i =0;i<col;i++){
+        for (var i = 0; i < col; i++) {
           imagesByColumes.push([])
         }
         j.images = j.images.sort(sorter)
@@ -127,34 +127,34 @@
         return imagesByColumes;
       }
 
-      function get_category(image_db){
+      function get_category(image_db) {
         const m = new Map();
         image_db.images.forEach(e => {
           (e['category'] || []).forEach(e2 => {
-            if(m.has(e2)){
+            if (m.has(e2)) {
               console.log(m, e2);
               m.get(e2).images.push(e);
-            }else{
-              obj = {"cover":e['thumbnailUrl'] || "","images":[e]};
+            } else {
+              obj = { "cover": e['thumbnailUrl'] || "", "images": [e] };
               m.set(e2, obj);
               console.log(m);
             }
           });
         });
 
-        res = [[],[],[],[]];
+        res = [[], []];
         arr = Array.from(m.keys());
-        for(var i =0;i<arr.length;i++){
-          res[i%res.length].push({"img":m.get(arr[i]).cover,"category":arr[i]});
+        for (var i = 0; i < arr.length; i++) {
+          res[i % res.length].push({ "img": m.get(arr[i]).cover, "category": arr[i] });
         }
 
         ret = [res, m]
         return ret;
       }
 
-      function make_images(images,col,sorter){
+      function make_images(images, col, sorter) {
         var imagesByColumes = [];
-        for(var i =0;i<col;i++){
+        for (var i = 0; i < col; i++) {
           imagesByColumes.push([])
         }
         images = images.sort(sorter)
@@ -169,7 +169,7 @@
         return response.json();
       }).then(function (j) {
 
-        imagesByColumes = get_images(j,4,sorter_by_date)
+        imagesByColumes = get_images(j, 4, sorter_by_date)
 
         cat = get_category(j);
 
@@ -178,8 +178,8 @@
           data() {
             return {
               imagesByColumes: imagesByColumes,
-              categories:cat[0],
-              categoryData:cat[1],
+              categories: cat[0],
+              categoryData: cat[1],
               slides: [],
               currentSlideIndex: 0,
               thumbnailUrl: "",
@@ -202,15 +202,15 @@
                 desc: true
               },
               isActive: false,
-              filterIndex:0,
+              filterIndex: 0,
             }
           },
           methods: {
-            filter: function(index){
+            filter: function (index) {
               this.filterIndex = index;
-              this.imagesByColumes = get_images(j,4,sorter_by_date);
+              this.imagesByColumes = get_images(j, 4, sorter_by_date);
             },
-            category: function(category_name){
+            category: function (category_name) {
               this.imagesByColumes = make_images(this.categoryData.get(category_name)['images'], 4, sorter_by_date);
             },
             detail: function (img) {
