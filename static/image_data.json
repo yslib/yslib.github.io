@@ -78,7 +78,6 @@
 			"note": "\u5fd8\u4e86\u5177\u4f53\u4f4d\u7f6e\u4e86\u3002\u7b2c\u4e00\u6b21\u770b\u5230\u611f\u89c9\u633a\u60ca\u8273\u7684\uff0c\u53ef\u60dc\u62cd\u4e0d\u597d\u3002",
 			"device": "Canon EOS 6D Mark II + Cannon 100-400mm f/4.5-5.6 IS II USM"
 		},
-
 		{
 			"url": "https://files.catbox.moe/od7z7x.jpg",
 			"thumbnailUrl": "disney_thum.jpg",
@@ -326,6 +325,16 @@
 			"url": "./static/img/landscape.jpg",
 			"thumbnailUrl": "landscape.jpg",
 			"name": "109国道风光",
+			"category":["landscape"],
+			"date": "2021-10-5",
+			"location": "QingHai, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/huoxing.jpg",
+			"thumbnailUrl": "huoxing.jpg",
+			"name": "火星公路雅丹地貌",
 			"category":["landscape"],
 			"date": "2021-10-5",
 			"location": "QingHai, China",
