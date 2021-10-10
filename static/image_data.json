@@ -211,6 +211,126 @@
 			"location": "\u94b1\u5858\u6c5f\u6a31\u82b1\u6b65\u9053",
 			"note": "\u8e72\u4e86\u597d\u957f\u65f6\u95f4\u62cd\u5230\u7684",
 			"device": "Conon 6D2, 100-400mm"
+		},
+		{
+			"url": "./static/img/gangshika.jpg",
+			"thumbnailUrl": "gangshika.jpg",
+			"name": "冈什卡雪山",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "达坂山观景台",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/gangshika1.jpg",
+			"thumbnailUrl": "gangshika1.jpg",
+			"name": "冈什卡雪山",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "达坂山观景台",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/feicuihu.jpg",
+			"thumbnailUrl": "feicuihu.jpg",
+			"name": "翡翠湖",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "大柴旦翡翠湖",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/yadan.jpg",
+			"thumbnailUrl": "yadan.jpg",
+			"name": "水上雅丹",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "西台 ",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/mingshashan.jpg",
+			"thumbnailUrl": "mingshashan.jpg",
+			"name": "鸣沙山 Ming Sha Mountain",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "敦煌 Dun Huang, Gan Su, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/mingshashan1.jpg",
+			"thumbnailUrl": "mingshashan1.jpg",
+			"name": "鸣沙山 Ming Sha Mountain",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "敦煌 DunHuang, GanSu, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/qinghaihu.jpg",
+			"thumbnailUrl": "qinghaihu.jpg",
+			"name": "青海湖 QingHai Lake",
+			"category":["landscape"],
+			"date": "2021-10-3",
+			"location": "Qinghai, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/shenzhou.jpg",
+			"thumbnailUrl": "shenzhou.jpg",
+			"name": "神州基地",
+			"category":["landscape"],
+			"date": "2021-8-15",
+			"location": "HangZhou, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/suganhu.jpg",
+			"thumbnailUrl": "suganhu.jpg",
+			"name": "小苏干湖",
+			"category":["landscape"],
+			"date": "2021-8-15",
+			"location": "QingHai, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/uroad.jpg",
+			"thumbnailUrl": "uroad.jpg",
+			"name": "315国道",
+			"category":["landscape"],
+			"date": "2021-10-5",
+			"location": "QingHai, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/landscape1.jpg",
+			"thumbnailUrl": "landscape1.jpg",
+			"name": "青海湖沿岸",
+			"category":["landscape"],
+			"date": "2021-10-5",
+			"location": "QingHai, China",
+			"note": "",
+			"device": "Sony A7R3"
+		},
+		{
+			"url": "./static/img/landscape.jpg",
+			"thumbnailUrl": "landscape.jpg",
+			"name": "109国道风光",
+			"category":["landscape"],
+			"date": "2021-10-5",
+			"location": "QingHai, China",
+			"note": "",
+			"device": "Sony A7R3"
 		}
 	]
 }
